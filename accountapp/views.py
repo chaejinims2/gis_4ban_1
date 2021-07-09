@@ -15,7 +15,7 @@ def hello_world(request):
         new_model.save()
 
         return render(request, 'accountapp/hello_world.html',
-                      context={'new_model': temp})
+                      context={'new_model': new_model})
     else:
         return render(request, 'accountapp/hello_world.html',
                       context={'text': 'GET METHOD'})

@@ -5,8 +5,8 @@
     <div class="imchaezip_header_button">
         <span>nav1</span>
         <span>nav2</span>
-
         {% if not user.is_authenticated %}
+
         <span>
             <a href="{% url 'accountapp:login' %}">
                 Login
@@ -19,7 +19,12 @@
         </span>
         {% else%}
         <span>
-            <a href=""{%  url 'accountapp:logout' %}>
+            <a href="{%  url 'accountapp:detail' pk=user.pk %}">
+                MyPage
+            </a>
+        </span>
+        <span>
+            <a href="{%  url 'accountapp:logout' %}">
                 Logout
             </a>
         </span>

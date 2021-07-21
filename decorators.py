@@ -1,11 +1,9 @@
-
 def decorator(func):
     def decorated(input_text):
         print('함수 시작!')
-        func(h, w)
+        func(input_text)
         print('함수 끝!')
     return decorated
-
 
 
 @decorator

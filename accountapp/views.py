@@ -75,6 +75,3 @@ class AccountDeleteView(DeleteView):
 
 
 
-
-
-

@@ -10,6 +10,15 @@
 
 <hr>
 
+{% for message in messages %}
+    <div class="text-center">
+        <div class="btn btn-success rounded-pill px-5">
+            {{ messages }}
+        </div>
+    </div>
+{% endfor %}
+
+
 {% block content %}
 {% endblock %}
 

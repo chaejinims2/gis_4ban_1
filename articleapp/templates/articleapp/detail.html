@@ -26,7 +26,7 @@
                  class=""
                  alt="">
             <div class="my-5">
-                {{ target_article.content }}
+                {{ target_article.content | safe }}
             </div>
 
             {% if target_article.witer == user %}
@@ -76,10 +76,8 @@
             {%  endfor %}
             {% include 'commentapp/create.html' %}
 
-
         </div>
     </div>
-
 
 
 

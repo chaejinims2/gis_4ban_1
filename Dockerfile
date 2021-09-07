@@ -2,6 +2,8 @@ FROM python:3.9.0
 
 WORKDIR /home/
 
+RUN echo 'dkssudgkpdyd'
+
 RUN git clone https://github.com/chaejinims2/gis_4ban_1.git
 
 WORKDIR /home/gis_4ban_1
